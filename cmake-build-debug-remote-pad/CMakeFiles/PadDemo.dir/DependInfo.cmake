@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/exe/PadDemo/I2CDriver.cpp" "/home/exe/PadDemo/cmake-build-debug-remote-pad/CMakeFiles/PadDemo.dir/I2CDriver.cpp.o"
   "/home/exe/PadDemo/main.cpp" "/home/exe/PadDemo/cmake-build-debug-remote-pad/CMakeFiles/PadDemo.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

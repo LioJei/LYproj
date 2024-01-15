@@ -74,12 +74,12 @@ clean: CMakeFiles/PadDemo.dir/clean
 CMakeFiles/PadDemo.dir/all:
 	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/depend
 	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/exe/PadDemo/cmake-build-debug-remote-pad/CMakeFiles --progress-num=1,2 "Built target PadDemo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/exe/PadDemo/cmake-build-debug-remote-pad/CMakeFiles --progress-num=1,2,3 "Built target PadDemo"
 .PHONY : CMakeFiles/PadDemo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PadDemo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/exe/PadDemo/cmake-build-debug-remote-pad/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/exe/PadDemo/cmake-build-debug-remote-pad/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/PadDemo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/exe/PadDemo/cmake-build-debug-remote-pad/CMakeFiles 0
 .PHONY : CMakeFiles/PadDemo.dir/rule

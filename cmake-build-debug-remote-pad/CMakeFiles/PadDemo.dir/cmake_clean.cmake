@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/PadDemo.dir/I2CDriver.cpp.o"
   "CMakeFiles/PadDemo.dir/main.cpp.o"
   "PadDemo"
   "PadDemo.pdb"

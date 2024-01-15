@@ -1,0 +1,16 @@
+//
+// Created by 14621 on 2024/1/15.
+//
+
+#ifndef PADDEMO_REGISTERDEFINE_H
+#define PADDEMO_REGISTERDEFINE_H
+
+#define SH3001_GYRO_XDATA_L     0x06
+#define SH3001_GYRO_XDATA_H     0x07
+#define SH3001_GYRO_YDATA_L     0x08
+#define SH3001_GYRO_YDATA_H     0x09
+#define SH3001_GYRO_ZDATA_L     0x0A
+#define SH3001_GYRO_ZDATA_H     0x0B
+
+
+#endif //PADDEMO_REGISTERDEFINE_H

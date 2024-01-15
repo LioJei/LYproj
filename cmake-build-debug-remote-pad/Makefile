@@ -123,6 +123,33 @@ PadDemo/fast:
 	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/build
 .PHONY : PadDemo/fast
 
+I2CDriver.o: I2CDriver.cpp.o
+
+.PHONY : I2CDriver.o
+
+# target to build an object file
+I2CDriver.cpp.o:
+	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/I2CDriver.cpp.o
+.PHONY : I2CDriver.cpp.o
+
+I2CDriver.i: I2CDriver.cpp.i
+
+.PHONY : I2CDriver.i
+
+# target to preprocess a source file
+I2CDriver.cpp.i:
+	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/I2CDriver.cpp.i
+.PHONY : I2CDriver.cpp.i
+
+I2CDriver.s: I2CDriver.cpp.s
+
+.PHONY : I2CDriver.s
+
+# target to generate assembly for a file
+I2CDriver.cpp.s:
+	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/I2CDriver.cpp.s
+.PHONY : I2CDriver.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PadDemo"
+	@echo "... I2CDriver.o"
+	@echo "... I2CDriver.i"
+	@echo "... I2CDriver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
