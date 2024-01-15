@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/exe/PadDemo/main.cpp
+iostream
+-
+cstdlib
+-
+cstdio
+-
+unistd.h
+-
+vector
+-
+

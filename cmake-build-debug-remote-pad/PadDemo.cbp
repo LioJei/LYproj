@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="PadDemo"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/exe/PadDemo/cmake-build-debug-remote-pad"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/exe/PadDemo/cmake-build-debug-remote-pad"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/exe/PadDemo/cmake-build-debug-remote-pad"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PadDemo">
+				<Option output="/home/exe/PadDemo/cmake-build-debug-remote-pad/PadDemo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/exe/PadDemo/cmake-build-debug-remote-pad"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/exe/PadDemo/."/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/../../../../include/c++/9.3.1"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/../../../../include/c++/9.3.1/aarch64-unknown-linux-gnu"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/include"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/include-fixed"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/../../include"/>
+					<Add directory="/usr/include/aarch64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 PadDemo"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="PadDemo/fast">
+				<Option output="/home/exe/PadDemo/cmake-build-debug-remote-pad/PadDemo" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/exe/PadDemo/cmake-build-debug-remote-pad"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/exe/PadDemo/."/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/../../../../include/c++/9.3.1"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/../../../../include/c++/9.3.1/aarch64-unknown-linux-gnu"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/../../../../include/c++/9.3.1/backward"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/include"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/aarch64-unknown-linux-gnu/9.3.1/include-fixed"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/opt/kpgcc_release/bin/../lib/gcc/../../include"/>
+					<Add directory="/usr/include/aarch64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 PadDemo/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/exe/PadDemo/cmake-build-debug-remote-pad/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/exe/PadDemo/main.cpp">
+			<Option target="PadDemo"/>
+		</Unit>
+		<Unit filename="/home/exe/PadDemo/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
