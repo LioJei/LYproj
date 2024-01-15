@@ -42,7 +42,6 @@ public:
      * */
     int I2CReadByte(uint8_t reg, uint8_t *val);
 
-    std::vector<std::string> strVec = {"xrandr -o normal","xrandr -o inverted","xrandr -o left","xrandr -o right"};
 private:
     int m_fd;
 };

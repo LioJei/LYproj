@@ -5,7 +5,7 @@
 #ifndef PADDEMO_HEADFILE_H
 #define PADDEMO_HEADFILE_H
 
-#include <stdio.h>
+#include <cstdio>
 #include <stdint.h>
 #include <stdlib.h>
 #include <unistd.h>
