@@ -7,6 +7,7 @@ CMakeFiles/PadDemo.dir/I2CDriver.cpp.o: ../headfile.h
 CMakeFiles/PadDemo.dir/I2CDriver.cpp.o: ../registerDefine.h
 
 CMakeFiles/PadDemo.dir/main.cpp.o: ../I2CDriver.h
+CMakeFiles/PadDemo.dir/main.cpp.o: ../SH3001Driver.h
 CMakeFiles/PadDemo.dir/main.cpp.o: ../headfile.h
 CMakeFiles/PadDemo.dir/main.cpp.o: ../main.cpp
 CMakeFiles/PadDemo.dir/main.cpp.o: ../registerDefine.h

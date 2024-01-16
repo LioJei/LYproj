@@ -94,6 +94,12 @@
 		<Unit filename="/home/exe/PadDemo/I2CDriver.h">
 			<Option target="PadDemo"/>
 		</Unit>
+		<Unit filename="/home/exe/PadDemo/SH3001Driver.cpp">
+			<Option target="PadDemo"/>
+		</Unit>
+		<Unit filename="/home/exe/PadDemo/SH3001Driver.h">
+			<Option target="PadDemo"/>
+		</Unit>
 		<Unit filename="/home/exe/PadDemo/main.cpp">
 			<Option target="PadDemo"/>
 		</Unit>

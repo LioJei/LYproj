@@ -14,9 +14,11 @@
 #include <string>
 #include <math.h>
 #include <sys/types.h>
-#include <sys/ioctl.h>
-#include <linux/types.h>
 #include <linux/i2c.h>
+#include <linux/gpio.h>
+#include <linux/input.h>
+#include <linux/ioctl.h>
+#include <linux/module.h>
 #include <linux/i2c-dev.h>
 #include "registerDefine.h"
 

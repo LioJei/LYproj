@@ -1,21 +1,22 @@
-#include "I2CDriver.h"
+#include "SH3001Driver.h"
 
 int main()
 {
     setenv("DISPLAY",":0",1);
     sh3001RegVal stRegval= {0};
-    I2CDriver i2CDriver;
+    SH3001Driver i2CDriver;
     int64_t x,y,z,old=0,index=0,current=0;
     system("xrandr -o normal");
     i2CDriver.OpenI2CDevice("/dev/i2c-5", 0x37);
+    i2CDriver.GyroSetup();
     while(true){
         for (int i=0; i<100; i++){
-            i2CDriver.I2CReadByte(SH3001_GYRO_XDATA_L, &stRegval.gyro_xdata_l);
-            i2CDriver.I2CReadByte(SH3001_GYRO_XDATA_H, &stRegval.gyro_xdata_h);
-            i2CDriver.I2CReadByte(SH3001_GYRO_YDATA_L, &stRegval.gyro_ydata_l);
-            i2CDriver.I2CReadByte(SH3001_GYRO_YDATA_H, &stRegval.gyro_ydata_h);
-            i2CDriver.I2CReadByte(SH3001_GYRO_ZDATA_L, &stRegval.gyro_zdata_l);
-            i2CDriver.I2CReadByte(SH3001_GYRO_ZDATA_H, &stRegval.gyro_zdata_h);
+            i2CDriver.I2CReadByte(SH3001G_GYRO_XL, &stRegval.gyro_xdata_l);
+            i2CDriver.I2CReadByte(SH3001G_GYRO_XH, &stRegval.gyro_xdata_h);
+            i2CDriver.I2CReadByte(SH3001G_GYRO_YL, &stRegval.gyro_ydata_l);
+            i2CDriver.I2CReadByte(SH3001G_GYRO_YH, &stRegval.gyro_ydata_h);
+            i2CDriver.I2CReadByte(SH3001G_GYRO_ZL, &stRegval.gyro_zdata_l);
+            i2CDriver.I2CReadByte(SH3001G_GYRO_ZH, &stRegval.gyro_zdata_h);
             x += ((stRegval.gyro_xdata_h << 8)|stRegval.gyro_xdata_l);
             y += ((stRegval.gyro_ydata_h << 8)|stRegval.gyro_ydata_l);
             z += ((stRegval.gyro_zdata_h << 8)|stRegval.gyro_zdata_l);

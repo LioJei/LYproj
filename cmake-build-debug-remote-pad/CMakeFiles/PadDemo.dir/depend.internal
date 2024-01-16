@@ -8,6 +8,7 @@ CMakeFiles/PadDemo.dir/I2CDriver.cpp.o
  /home/exe/PadDemo/registerDefine.h
 CMakeFiles/PadDemo.dir/main.cpp.o
  /home/exe/PadDemo/I2CDriver.h
+ /home/exe/PadDemo/SH3001Driver.h
  /home/exe/PadDemo/headfile.h
  /home/exe/PadDemo/main.cpp
  /home/exe/PadDemo/registerDefine.h

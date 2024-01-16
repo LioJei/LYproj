@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/PadDemo.dir/I2CDriver.cpp.o CMakeFiles/PadDemo.dir/main.cpp.o  -o PadDemo 
+/usr/bin/c++  -g   CMakeFiles/PadDemo.dir/I2CDriver.cpp.o CMakeFiles/PadDemo.dir/SH3001Driver.cpp.o CMakeFiles/PadDemo.dir/main.cpp.o  -o PadDemo 

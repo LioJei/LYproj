@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/home/exe/PadDemo/I2CDriver.cpp
+I2CDriver.h
+/home/exe/PadDemo/I2CDriver.h
+
 /home/exe/PadDemo/I2CDriver.h
 headfile.h
 /home/exe/PadDemo/headfile.h
+
+/home/exe/PadDemo/SH3001Driver.h
+I2CDriver.h
+/home/exe/PadDemo/I2CDriver.h
 
 /home/exe/PadDemo/headfile.h
 cstdio
@@ -25,6 +33,8 @@ vector
 -
 string
 -
+math.h
+-
 sys/types.h
 -
 sys/ioctl.h
@@ -39,8 +49,8 @@ registerDefine.h
 /home/exe/PadDemo/registerDefine.h
 
 /home/exe/PadDemo/main.cpp
-I2CDriver.h
-/home/exe/PadDemo/I2CDriver.h
+SH3001Driver.h
+/home/exe/PadDemo/SH3001Driver.h
 
 /home/exe/PadDemo/registerDefine.h
 

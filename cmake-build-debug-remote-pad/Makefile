@@ -150,6 +150,33 @@ I2CDriver.cpp.s:
 	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/I2CDriver.cpp.s
 .PHONY : I2CDriver.cpp.s
 
+SH3001Driver.o: SH3001Driver.cpp.o
+
+.PHONY : SH3001Driver.o
+
+# target to build an object file
+SH3001Driver.cpp.o:
+	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/SH3001Driver.cpp.o
+.PHONY : SH3001Driver.cpp.o
+
+SH3001Driver.i: SH3001Driver.cpp.i
+
+.PHONY : SH3001Driver.i
+
+# target to preprocess a source file
+SH3001Driver.cpp.i:
+	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/SH3001Driver.cpp.i
+.PHONY : SH3001Driver.cpp.i
+
+SH3001Driver.s: SH3001Driver.cpp.s
+
+.PHONY : SH3001Driver.s
+
+# target to generate assembly for a file
+SH3001Driver.cpp.s:
+	$(MAKE) -f CMakeFiles/PadDemo.dir/build.make CMakeFiles/PadDemo.dir/SH3001Driver.cpp.s
+.PHONY : SH3001Driver.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... I2CDriver.o"
 	@echo "... I2CDriver.i"
 	@echo "... I2CDriver.s"
+	@echo "... SH3001Driver.o"
+	@echo "... SH3001Driver.i"
+	@echo "... SH3001Driver.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
