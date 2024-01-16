@@ -5,11 +5,9 @@ CMakeFiles/PadDemo.dir/I2CDriver.cpp.o
  /home/exe/PadDemo/I2CDriver.cpp
  /home/exe/PadDemo/I2CDriver.h
  /home/exe/PadDemo/headfile.h
- /usr/include/linux/fcntl.h
- /usr/include/linux/unistd.h
+ /home/exe/PadDemo/registerDefine.h
 CMakeFiles/PadDemo.dir/main.cpp.o
  /home/exe/PadDemo/I2CDriver.h
  /home/exe/PadDemo/headfile.h
  /home/exe/PadDemo/main.cpp
- /usr/include/linux/fcntl.h
- /usr/include/linux/unistd.h
+ /home/exe/PadDemo/registerDefine.h

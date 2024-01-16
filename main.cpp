@@ -5,30 +5,40 @@ int main()
     setenv("DISPLAY",":0",1);
     sh3001RegVal stRegval= {0};
     I2CDriver i2CDriver;
-//    int res = execl("/bin/sh", "sh", "-c", "xrandr -o normal", (char *) 0);
-//    if (res){
-//        perror("xrandr exec error.");
-//    }
+    int64_t x,y,z,old=0,index=0,current=0;
     system("xrandr -o normal");
     i2CDriver.OpenI2CDevice("/dev/i2c-5", 0x37);
     while(true){
-        i2CDriver.I2CReadByte(SH3001_GYRO_XDATA_L, &stRegval.gyro_xdata_l);
-        i2CDriver.I2CReadByte(SH3001_GYRO_XDATA_H, &stRegval.gyro_xdata_h);
-        i2CDriver.I2CReadByte(SH3001_GYRO_YDATA_L, &stRegval.gyro_ydata_l);
-        i2CDriver.I2CReadByte(SH3001_GYRO_YDATA_H, &stRegval.gyro_ydata_h);
-        i2CDriver.I2CReadByte(SH3001_GYRO_ZDATA_L, &stRegval.gyro_zdata_l);
-        i2CDriver.I2CReadByte(SH3001_GYRO_ZDATA_H, &stRegval.gyro_zdata_h);
-//        printf("data:0x%x\n", stRegval.gyro_xdata_l);
-//        printf("data:0x%x\n", stRegval.gyro_xdata_h);
-//        printf("data:0x%x\n", stRegval.gyro_ydata_l);
-//        printf("data:0x%x\n", stRegval.gyro_ydata_h);
-//        printf("data:0x%x\n", stRegval.gyro_zdata_l);
-//        printf("data:0x%x\n", stRegval.gyro_zdata_h);
+        for (int i=0; i<100; i++){
+            i2CDriver.I2CReadByte(SH3001_GYRO_XDATA_L, &stRegval.gyro_xdata_l);
+            i2CDriver.I2CReadByte(SH3001_GYRO_XDATA_H, &stRegval.gyro_xdata_h);
+            i2CDriver.I2CReadByte(SH3001_GYRO_YDATA_L, &stRegval.gyro_ydata_l);
+            i2CDriver.I2CReadByte(SH3001_GYRO_YDATA_H, &stRegval.gyro_ydata_h);
+            i2CDriver.I2CReadByte(SH3001_GYRO_ZDATA_L, &stRegval.gyro_zdata_l);
+            i2CDriver.I2CReadByte(SH3001_GYRO_ZDATA_H, &stRegval.gyro_zdata_h);
+            x += ((stRegval.gyro_xdata_h << 8)|stRegval.gyro_xdata_l);
+            y += ((stRegval.gyro_ydata_h << 8)|stRegval.gyro_ydata_l);
+            z += ((stRegval.gyro_zdata_h << 8)|stRegval.gyro_zdata_l);
+        }
+        printf("\nx: %d\ny: %d\nz: %d\n",x/100, y/100, z/100);
+        x /= 100;
+        if (current == 0){
+            old = x;
+            current++;
+            continue;
+        }
+        if (abs(x-old) > 3000){
+            if (index == 0){
+                system("xrandr -o inverted");
+                index = 1;
+            } else {
+                system("xrandr -o normal");
+                index = 0;
+            }
+        }
 
-        printf("\nx: 0x%x\ny: 0x%x\nz: 0x%x\n",((stRegval.gyro_xdata_h << 8)|stRegval.gyro_xdata_l),
-               ((stRegval.gyro_ydata_h << 8)|stRegval.gyro_ydata_l),
-               ((stRegval.gyro_zdata_h << 8)|stRegval.gyro_zdata_l));
-        sleep(1);
+        x=y=z=0;
+        usleep(500000);
     }
 }
 

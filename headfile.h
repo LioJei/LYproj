@@ -12,6 +12,7 @@
 #include <fcntl.h>
 #include <vector>
 #include <string>
+#include <math.h>
 #include <sys/types.h>
 #include <sys/ioctl.h>
 #include <linux/types.h>
