@@ -4,11 +4,15 @@
 
 #ifndef PADDEMO_HEADFILE_H
 #define PADDEMO_HEADFILE_H
-
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <ctime>
 #include <cstdio>
 #include <stdint.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <iomanip>
 #include <fcntl.h>
 #include <vector>
 #include <string>
@@ -21,14 +25,6 @@
 #include <linux/module.h>
 #include <linux/i2c-dev.h>
 #include "registerDefine.h"
-
-struct sh3001RegVal{
-    uint8_t gyro_xdata_l;
-    uint8_t gyro_xdata_h;
-    uint8_t gyro_ydata_l;
-    uint8_t gyro_ydata_h;
-    uint8_t gyro_zdata_l;
-    uint8_t gyro_zdata_h;
-};
+#include "Logger.h"
 
 #endif //PADDEMO_HEADFILE_H

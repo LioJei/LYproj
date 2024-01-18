@@ -2,11 +2,12 @@
 
 int main()
 {
+    log4cplus::Initializer initializer;
     setenv("DISPLAY",":0",1);
+    system("xrandr -o normal");
     sh3001RegVal stRegval= {0};
     SH3001Driver i2CDriver;
     int64_t x,y,z,old=0,index=0,current=0;
-    system("xrandr -o normal");
     i2CDriver.OpenI2CDevice("/dev/i2c-5", 0x37);
     i2CDriver.GyroSetup();
     i2CDriver.printfGyroData();

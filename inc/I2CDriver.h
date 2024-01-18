@@ -26,21 +26,21 @@ public:
      * @param[in]:  address -- device slave address.
      * @return:     0:success, -1:failed.
      * */
-    int OpenI2CDevice(const char *devName, uint8_t address);
+    int OpenI2CDevice(const char *devName, unsigned char address);
     /**
      * @brief:      write byte value to device register.
      * @param[in]:  reg -- device register address.
      * @param[in]:  val -- the value will write to register.
      * @return:     0:success, -1:failed.
      * */
-    int I2CWriteByte(uint8_t reg, uint8_t val);
+    int I2CWriteByte(unsigned char reg, unsigned char val);
     /**
      * @brief:      read byte value for device register.
      * @param[in]:  reg -- device register address.
      * @param[in]:  val -- the value will read for register.
      * @return:     0:success, -1:failed.
      * */
-    int I2CReadByte(uint8_t reg, uint8_t *val);
+    int I2CReadByte(unsigned char reg, unsigned char *val);
 
 private:
     int m_fd;

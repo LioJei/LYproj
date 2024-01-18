@@ -14,7 +14,7 @@ I2CDriver::~I2CDriver() {
 
 }
 
-int I2CDriver::OpenI2CDevice(const char *devName, uint8_t address) {
+int I2CDriver::OpenI2CDevice(const char *devName, unsigned char address) {
     if ((m_fd = open(devName, O_RDWR)) < 0) {
         perror("Failed to open the i2c bus\n");
         return -1;
@@ -27,8 +27,8 @@ int I2CDriver::OpenI2CDevice(const char *devName, uint8_t address) {
     return 0;
 }
 
-int I2CDriver::I2CWriteByte(uint8_t reg, uint8_t val) {
-    uint8_t buffer[2];
+int I2CDriver::I2CWriteByte(unsigned char reg, unsigned char val) {
+    unsigned char buffer[2];
     buffer[0] = reg;
     buffer[1] = val;
     if (write(m_fd, buffer, 2) != 2)
@@ -39,7 +39,7 @@ int I2CDriver::I2CWriteByte(uint8_t reg, uint8_t val) {
     return 0;
 }
 
-int I2CDriver::I2CReadByte(uint8_t reg, uint8_t *val) {
+int I2CDriver::I2CReadByte(unsigned char reg, unsigned char *val) {
     if (write(m_fd, &reg, 1) != 1)
     {
         perror("Failed to write to the i2c bus");

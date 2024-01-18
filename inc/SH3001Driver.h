@@ -6,6 +6,16 @@
 #define PADDEMO_SH3001DRIVER_H
 #include "I2CDriver.h"
 
+//gyro寄存存数结构体
+struct sh3001RegVal{
+    uint8_t gyro_xdata_l;
+    uint8_t gyro_xdata_h;
+    uint8_t gyro_ydata_l;
+    uint8_t gyro_ydata_h;
+    uint8_t gyro_zdata_l;
+    uint8_t gyro_zdata_h;
+};
+
 class SH3001Driver : public I2CDriver {
 public:
     /**

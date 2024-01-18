@@ -152,7 +152,9 @@ void SH3001Driver::printfGyroData() {
         x = ((stRegval.gyro_xdata_h << 8) | stRegval.gyro_xdata_l);
         y = ((stRegval.gyro_ydata_h << 8) | stRegval.gyro_ydata_l);
         z = ((stRegval.gyro_zdata_h << 8) | stRegval.gyro_zdata_l);
-        printf("\nx: %d\ny: %d\nz: %d\n", x, y, z);
+        myLogger.LoggerRecord(E_LOG_DEBUG, "X:" + to_string(x)+
+                                                        " Y:" + to_string(y)+
+                                                        " Z:" + to_string(z));
         sleep(3);
     }
 }
