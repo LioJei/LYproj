@@ -66,6 +66,12 @@ public:
                     unsigned char gyroRangeZ,
                     unsigned char gyroCutOffFreq,
                     unsigned char gyroFilterEnable);
+    /**
+     * @brief:      Printf Gyro Data.
+     * @param[in]:  None.
+     * @return:     None.
+     * */
+    void printfGyroData(void);
 private:
 };
 

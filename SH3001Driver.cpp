@@ -135,3 +135,24 @@ void SH3001Driver::GyroConfig(unsigned char gyroODR, unsigned char gyroRangeX, u
     regData |= (gyroCutOffFreq | gyroFilterEnable);
     this->I2CWriteByte(SH3001G_GYRO_CONF2, regData);
 }
+
+void SH3001Driver::printfGyroData() {
+    sh3001RegVal stRegval= {0};
+    int x,y,z;
+    while(true) {
+        this->I2CReadByte(SH3001G_GYRO_XL, &stRegval.gyro_xdata_l);
+        this->I2CReadByte(SH3001G_GYRO_XH, &stRegval.gyro_xdata_h);
+        this->I2CReadByte(SH3001G_GYRO_YL, &stRegval.gyro_ydata_l);
+        this->I2CReadByte(SH3001G_GYRO_YH, &stRegval.gyro_ydata_h);
+        this->I2CReadByte(SH3001G_GYRO_ZL, &stRegval.gyro_zdata_l);
+        this->I2CReadByte(SH3001G_GYRO_ZH, &stRegval.gyro_zdata_h);
+        printf("%d,%d,%d,%d,%d,%d\n", stRegval.gyro_xdata_l, stRegval.gyro_xdata_h,
+                                        stRegval.gyro_ydata_l, stRegval.gyro_ydata_h,
+                                        stRegval.gyro_zdata_l,stRegval.gyro_zdata_h);
+        x = ((stRegval.gyro_xdata_h << 8) | stRegval.gyro_xdata_l);
+        y = ((stRegval.gyro_ydata_h << 8) | stRegval.gyro_ydata_l);
+        z = ((stRegval.gyro_zdata_h << 8) | stRegval.gyro_zdata_l);
+        printf("\nx: %d\ny: %d\nz: %d\n", x, y, z);
+        sleep(3);
+    }
+}

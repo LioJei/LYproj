@@ -9,7 +9,8 @@ int main()
     system("xrandr -o normal");
     i2CDriver.OpenI2CDevice("/dev/i2c-5", 0x37);
     i2CDriver.GyroSetup();
-    while(true){
+    i2CDriver.printfGyroData();
+    /*while(true){
         for (int i=0; i<100; i++){
             i2CDriver.I2CReadByte(SH3001G_GYRO_XL, &stRegval.gyro_xdata_l);
             i2CDriver.I2CReadByte(SH3001G_GYRO_XH, &stRegval.gyro_xdata_h);
@@ -40,6 +41,6 @@ int main()
 
         x=y=z=0;
         usleep(500000);
-    }
+    }*/
 }
 
